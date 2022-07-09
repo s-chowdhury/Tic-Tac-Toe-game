@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+nav{
+    font-family: 'Blaka Hollow', cursive;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 30px;
+    background-color: rgb(61, 5, 114);
+    color: white;
+}
+#gammer{
+    display: flex;
+    align-items: center;
+    font-family: 'Blaka Hollow', cursive;
+    justify-content: center;
+    background-color: aqua;
+}
+.player{
+    margin: 30px 70px;
+    margin-left: 0;
+    padding: 5px 4px;
+    width: 200px;
+    border-radius: 4px;
+}
+.player:disabled{
+    margin: 30px 70px;
+    margin-left: 0;
+    padding: 5px 4px;
+    width: 200px;
+    border-radius: 4px;
+    background-color: greenyellow;
+}
+.btnSave{
+    margin: 20px 0;
+    width: 20vh; 
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(214, 171, 171);
+}
+.btnSave:hover{
+    background-color: rgb(183, 124, 124);
+}
+.btnSave:active{
+    transform: scale(0.9);
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+#gameSpace{
+    display: grid;
+    grid-template-columns: repeat(3,13vw);
+    grid-template-rows: repeat(3,13vh);
+    margin: 50px 0;
+}
+.box{
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+.box:hover{
+    background-color: rgb(199, 228, 234);
+}
+.bl{
+    border-left: 0;
+}
+.br{
+    border-right: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+#gameScore{
+    display: flex;
+    font-family: 'Blaka Hollow', cursive;
+    flex-direction: column;
+    margin: 50px 50px;
+}
+.btn{
+    margin: 20px 0;
+    width: 20vh; 
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(176, 189, 225);
+}
+.btn:hover{
+    background-color: rgb(122, 143, 201);
+}
+.btn:active{
+    transform: scale(0.9);
+}
+#img{
+    width: 0vh; 
+    transition: width 2s ease-in;  
+}
+#img1{
+    width: 0vh; 
+    transition: width 2s ease-in;  
+}
+#img.active{
+    width: 20vh;   
+}
+#img1.active{
+    width: 20vh;   
+}

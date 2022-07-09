@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Blaka+Hollow&family=Kanit:wght@300;700&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="project8.css">
+    <title>Tic Tac Toe game</title>
+</head>
+<body>
+    <div class="gameContainer">
+        <nav>
+            <h3>Welcome to the Tic Tac Toe game</h3>
+        </nav>
+        <div id="gammer">
+            Name of player 1:<input type="text" class="player" id="Player1"placeholder="Name">
+            Name of player 2:<input type="text" class="player" id="Player2"placeholder="Name">
+            <button class="btnSave">Save</button>
+        </div>
+        <div class="container">
+            <div id="gameSpace">
+                <div class="box bl bt"><span class="boxText"></span></div>
+                <div class="box bt"><span class="boxText"></span></div>
+                <div class="box bt br"><span class="boxText"></span></div>
+                <div class="box bl"><span class="boxText"></span></div>
+                <div class="box "><span class="boxText"></span></div>
+                <div class="box br"><span class="boxText"></span></div>
+                <div class="box bl bb"><span class="boxText"></span></div>
+                <div class="box bb"><span class="boxText"></span></div>
+                <div class="box bb br"><span class="boxText"></span></div>
+            </div>
+            <div id="gameScore">
+                <span class="info"></span>
+                <button class="btn">Reset</button>
+                <img src="winCelebration.gif" id="img" class="" alt="GIF">
+                <img src="drawGame.gif" id="img1" class="" alt="GIF">
+            </div>
+        </div>
+    </div>
+    <script src="project8.js"></script>
+</body>
+</html>
